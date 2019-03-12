@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipCalculator">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/totalBillField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/total_bill"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no" tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/percentageField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/tip_percentage"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no" tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/numPeopleField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/number_of_people"
+            android:inputType="number"
+            android:importantForAutofill="no" tools:targetApi="o" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calculatePressed"
+            android:text="@string/calculate" />
+
+        <TextView
+            android:id="@+id/tipPerPersonView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

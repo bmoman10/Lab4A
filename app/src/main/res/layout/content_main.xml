@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tipCalcButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="tipCalculatorPressed"
+            android:text="@string/tip_calculator" />
+
+        <Button
+            android:id="@+id/milesToKiloCalcButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="milesToKiloPressed"
+            android:text="@string/miles_to_kilometers_converter" />
+
+        <Button
+            android:id="@+id/degreesCalcButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="degreesConverterPressed"
+            android:text="@string/fahrenheit_to_celsius_converter" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
